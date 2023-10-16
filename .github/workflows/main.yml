@@ -53,20 +53,15 @@ jobs:
         run: |
           npm run docs:build
           
-      - name: Create .nojekyll file if dist directory exists
+      - name: Create .nojekyll file
         run: |
-          if [ -d "docs/.vitepress/dist/" ]; then
-          touch docs/.vitepress/dist/.nojekyll
-          else
-            echo "docs/.vitepress/dist/ does not exist."
-          exit 1
-          fi
+          touch dist/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: docs/.vitepress/dist
-
+          path: dist
+          
   # Deployment job
   deploy:
     environment:
