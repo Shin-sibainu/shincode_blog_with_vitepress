@@ -52,7 +52,16 @@ jobs:
       - name: Build with VitePress
         run: |
           npm run docs:build
+          
+      - name: Create .nojekyll file if dist directory exists
+        run: |
+          if [ -d "docs/.vitepress/dist/" ]; then
           touch docs/.vitepress/dist/.nojekyll
+          else
+            echo "docs/.vitepress/dist/ does not exist."
+          exit 1
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
