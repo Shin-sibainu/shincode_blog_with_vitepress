@@ -40,7 +40,7 @@ npx vitepress init
 npm run docs:dev
 ```
 
-http://localhost:5173 でブラウザで確認することができます。
+[http://localhost:5173](http://localhost:5173) でブラウザで確認することができます。
 
 ## ファイル構造
 
