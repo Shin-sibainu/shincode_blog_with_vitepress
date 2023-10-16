@@ -5,7 +5,7 @@ export default defineConfig({
   lang: "ja",
   title: "ShinCode_Camp_Blog",
   description: "作りたいアプリを、思い通りに作れるエンジニアへ",
-  base: "/shincode_blog_with_vitepress/",
+  base: "/",
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
