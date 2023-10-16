@@ -2,10 +2,13 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "npx vitepress build docs",
+    "docs:build": "vitepress build docs && mv docs/.vitepress/dist dist",
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.22"
   }
 }
