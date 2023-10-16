@@ -23,6 +23,9 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  INPUT_PATH: /home/runner/work/shincode_blog_with_vitepress/shincode_blog_with_vitepress/docs/.vitepress/dist
+  
 jobs:
   # Build job
   build:
