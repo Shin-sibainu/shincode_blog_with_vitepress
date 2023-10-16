@@ -29,5 +29,6 @@ var tag_list = Object.keys(tags)
 <ul>
   <li v-for="tag of tag_list">
     <a :href="'/tags/' + encodeURIComponent(tag.replaceAll(' ', '')) + '/'">{{ tag }} ({{ tags[tag] }})</a>
+      <!-- <a :href="'/shincode_blog_with_vitepress' + post.url">{{ post.frontmatter.title }}</a> -->
   </li>
 </ul>

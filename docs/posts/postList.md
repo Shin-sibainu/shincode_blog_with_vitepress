@@ -13,6 +13,6 @@ import { data as posts } from "../.vitepress/theme/posts.data.ts"
 
 <ul>
   <li v-for="post of posts">
-    <a :href="post.url">{{ post.frontmatter.title }}</a>
+    <a :href="'/shincode_blog_with_vitepress' + post.url">{{ post.frontmatter.title }}</a>
   </li>
 </ul>
