@@ -18,7 +18,7 @@ prev: false
 - [ブログを書くための MarkDown リスト](https://vitepress.dev/guide/markdown)
   ::: -->
 
-::: danger 【広告】月額 2500 円でフルスタックエンジニアになろう :dog:
+::: danger 【宣伝】月額 2500 円でフルスタックエンジニアになろう :dog:
 [ShinCode_Camp の詳細を見る](https://code-s-school-5bc2.thinkific.com/bundles/shincode-camp)
 :::
 
