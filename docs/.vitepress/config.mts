@@ -8,6 +8,9 @@ export default defineConfig({
   base: "/shincode_blog_with_vitepress/",
 
   themeConfig: {
+    search: {
+      provider: "local",
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
